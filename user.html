@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Blog!</title>
+    <style>
+        .container1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+        margin-top: 80px;
+    }
+
+    .box{
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        background-color: #fd735a;
+        color:black;
+       font-weight: bold;
+        padding: 30px 30px;
+        border-radius: 20px;
+    }
+
+    .box img{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 250px;
+        width: 250px;
+    }
+
+    .box ul{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .box ul li{
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+
+    .box ul li i{
+        cursor: pointer;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .box ul li i:hover{
+        opacity: 0.6;
+    }
+
+    .About{
+        margin-left: 20px;
+        flex: 50%;
+        display: table;
+        padding: 30px 30px;
+        font-size: 15px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .About h1{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .About ul li{
+        list-style: none;
+    }
+
+    .About ul{
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 1068px) {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+        .About{
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .About h1{
+            text-align: center;
+        }}
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h1>IIIT_BLOGS</h1>
+        </div>
+        <ul class="nav-list">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="user.html">USER</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </header>
+    
+
+    <div class="container1">
+        <div class="box">
+            <img src="photo-1438761681033-6461ffad8d80.png" alt="">
+            <ul>
+                <li>User Name</li>
+                <li>Age</li>
+                <li>Profession</li>
+                <li>
+                    <i style="font-size:24px" class="fab fa-facebook"></i>
+                    <i style="font-size:24px" class="fab fa-instagram"></i>
+                    <i style="font-size:24px" class="fab fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div class="About">
+            <ul>
+                <h1>about</h1>
+            </ul>
+            <ul>
+                <h3>Work</h3>
+                <li>Student</li>
+            </ul>
+            <ul>
+                <h3>Gender</h3>
+                <li>female</li>
+            </ul>
+            <ul>
+                <h3>Country</h3>
+                <li>India</li>
+            </ul>
+            <ul>
+                <h3>More Info</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
+                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
+                    still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).</p>
+            </ul>
+            <ul>
+                <h3>Contact</h3>
+                <li>example@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="icons">
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 kaniskaa, all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
