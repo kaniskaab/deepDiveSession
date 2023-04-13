@@ -410,4 +410,54 @@ footer{
   a.login:hover{
     text-decoration: underline;
   }
+ @media only screen and (max-width: 768px) {
+    body .card-container .cards .container .articles
+    {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .cards .card-container{
+       width: 90%;
+    }
+    .article-heading h5{
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        position: relative;
+        color: rgba(244, 165, 165, 0.427);
+    }
+    .article-heading h6{
+        font-size: 4rem;
+        font-weight: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #5b5963;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .profile-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons .social i{
+        font-size: 1rem;
+        color: grey;
+        padding: 1rem;
+        transition: all 0.4 ease;
+    }
+    .icons .copyright p{
+        font-size: 0.5rem;
+    }
+    
+    
+    
+   }
   
